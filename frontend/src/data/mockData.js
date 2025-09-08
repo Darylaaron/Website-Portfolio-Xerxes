@@ -129,6 +129,33 @@ export const videoGallery = {
           type: "streamable"
         }
       ]
+    },
+    {
+      id: "dr-jones-dc",
+      title: "Dr. Jones DC",
+      subtitle: "Video Editor / Social Media Manager / Content Creator (Nov 2024 – Jul 2025)",
+      description: "Patient-education video series and social media content for Dr. Jones DC. Most-viewed reel hit millions of views on TikTok. Doubled Instagram follower count to 18K through strategic content planning and healthcare-focused educational content.",
+      badge: "🩺 Healthcare Content",
+      videos: [
+        {
+          id: 14,
+          title: "Dr. Jones DC Healthcare Content 1",
+          embedUrl: "https://streamable.com/e/x0py87?",
+          type: "streamable"
+        },
+        {
+          id: 15,
+          title: "Dr. Jones DC Healthcare Content 2",
+          embedUrl: "https://streamable.com/e/np2fl2?",
+          type: "streamable"
+        },
+        {
+          id: 16,
+          title: "Dr. Jones DC Healthcare Content 3",
+          embedUrl: "https://streamable.com/e/l4kxr1?",
+          type: "streamable"
+        }
+      ]
     }
   ]
 };

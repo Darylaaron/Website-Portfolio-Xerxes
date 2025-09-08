@@ -1,6 +1,20 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { videoGallery } from "../data/mockData";
 import { Play, X, ChevronLeft, ChevronRight } from "lucide-react";
+
+// Debounce hook for performance
+const useDebounce = (callback, delay) => {
+  const debounceRef = useRef();
+  
+  const debouncedCallback = useCallback((...args) => {
+    if (debounceRef.current) {
+      clearTimeout(debounceRef.current);
+    }
+    debounceRef.current = setTimeout(() => callback(...args), delay);
+  }, [callback, delay]);
+  
+  return debouncedCallback;
+};
 
 const LazyVideoPreview = ({ video, index, onClick }) => {
   const [isInView, setIsInView] = useState(false);

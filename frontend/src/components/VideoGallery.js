@@ -195,7 +195,7 @@ const VideoGallery = () => {
 
           {/* Video grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {currentCategory.videos.map((video, index) => (
+            {displayedVideos.map((video, index) => (
               <LazyVideoPreview
                 key={video.id}
                 video={video}
@@ -204,6 +204,18 @@ const VideoGallery = () => {
               />
             ))}
           </div>
+
+          {/* Load More Button */}
+          {hasMoreVideos && (
+            <div className="text-center mt-8">
+              <button
+                onClick={loadMoreVideos}
+                className="px-8 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg"
+              >
+                Load More Videos ({currentCategory.videos.length - visibleVideos} remaining)
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Video Modal */}

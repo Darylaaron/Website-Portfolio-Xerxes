@@ -35,32 +35,38 @@ export const videoGallery = {
         {
           id: 1,
           title: "Break-up with ex",
-          vimeoUrl: "https://player.vimeo.com/video/1107124870?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1107124870?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
         },
         {
           id: 2,
           title: "17-Year-Old, Found Not Guilty of Killing Mother...",
-          vimeoUrl: "https://player.vimeo.com/video/1107124959?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1107124959?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
         },
         {
           id: 3,
           title: "Different kind of hanger that we recommend",
-          vimeoUrl: "https://player.vimeo.com/video/1107124800?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1107124800?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
         },
         {
           id: 4,
           title: "Chat GPT Brooke",
-          vimeoUrl: "https://player.vimeo.com/video/1107124728?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1107124728?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
         },
         {
           id: 5,
           title: "Good Spa...",
-          vimeoUrl: "https://player.vimeo.com/video/1107124524?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1107124524?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
         },
         {
           id: 6,
           title: "Copy of Copy of Did you know (Mobile Video)",
-          vimeoUrl: "https://player.vimeo.com/video/1107121593?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1107121593?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
         }
       ]
     },
@@ -74,22 +80,53 @@ export const videoGallery = {
         {
           id: 7,
           title: "Find home here",
-          vimeoUrl: "https://player.vimeo.com/video/1116730466?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1116730466?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
         },
         {
           id: 8,
           title: "Burn more fat",
-          vimeoUrl: "https://player.vimeo.com/video/1116730310?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1116730310?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
         },
         {
           id: 9,
           title: "1218",
-          vimeoUrl: "https://player.vimeo.com/video/1116730134?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1116730134?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
         },
         {
           id: 10,
           title: "Fantastic 4",
-          vimeoUrl: "https://player.vimeo.com/video/1116729928?badge=0&autopause=0&player_id=0&app_id=58479"
+          embedUrl: "https://player.vimeo.com/video/1116729928?badge=0&autopause=0&player_id=0&app_id=58479",
+          type: "vimeo"
+        }
+      ]
+    },
+    {
+      id: "brady-mullen",
+      title: "Brady Mullen, American Liberty Mortgage",
+      subtitle: "Social Media Management & Video Editing (Feb 2024 – Nov 2024)",
+      description: "Professional social media content and video editing for Brady Mullen at American Liberty Mortgage. Managed multi-platform social media accounts and created engaging graphic content for mortgage industry clients.",
+      badge: "🏠 Mortgage Marketing",
+      videos: [
+        {
+          id: 11,
+          title: "American Liberty Mortgage Content 1",
+          embedUrl: "https://streamable.com/e/6d0x76?",
+          type: "streamable"
+        },
+        {
+          id: 12,
+          title: "American Liberty Mortgage Content 2",
+          embedUrl: "https://streamable.com/e/3yqlg1?",
+          type: "streamable"
+        },
+        {
+          id: 13,
+          title: "American Liberty Mortgage Content 3",
+          embedUrl: "https://streamable.com/e/iwx51w?",
+          type: "streamable"
         }
       ]
     }

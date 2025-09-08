@@ -65,8 +65,8 @@ const RedesignedHeroSection = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative group">
               {/* Floating name card with glassmorphism */}
-              <div className="absolute -top-4 -right-4 bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-2xl z-10 border border-white/20 group-hover:scale-105 transition-all duration-300">
-                <div className="text-right text-white">
+              <div className="absolute -bottom-4 -left-4 bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-2xl z-10 border border-white/20 group-hover:scale-105 transition-all duration-300">
+                <div className="text-left text-white">
                   <div className="text-xl font-bold">XERXES</div>
                   <div className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">SEAN RUBIO</div>
                   <div className="text-sm text-gray-300 mt-2">{personalInfo.title}</div>

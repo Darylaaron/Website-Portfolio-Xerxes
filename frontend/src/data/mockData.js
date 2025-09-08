@@ -1,3 +1,197 @@
+export const professionalExperience = {
+  title: "Professional Experience",
+  subtitle: "7+ Years of Digital Marketing Excellence",
+  description: "Comprehensive work history showcasing expertise across digital marketing, social media management, video editing, graphic design, and content creation. Proven track record of driving results for diverse clients and industries.",
+  badge: "💼 Work History",
+  experiences: [
+    {
+      id: 1,
+      role: "Digital Marketer",
+      company: "Instacraft Marketing",
+      client: "Ivins Steinhauer",
+      period: "Dec 2024 – Present",
+      status: "Current",
+      achievements: [
+        "Built the brand's WordPress website, integrating checkout, CRM and email automations",
+        "Produce weekly reels and ads that generate >200 qualified leads/mo via targeted Meta Ads campaigns"
+      ],
+      category: "Digital Marketing"
+    },
+    {
+      id: 2,
+      role: "Social Media Manager / Video Editor",
+      company: "Brady Mullen, American Liberty Mortgage",
+      period: "Feb 2024 – Nov 2024",
+      status: "Completed",
+      achievements: [
+        "Oversees social media accounts across multiple platforms such as Facebook, Twitter, Instagram, YouTube, and TikTok",
+        "Responsible for editing graphic content like memes, videos, and newsletters for Brady Mullen's clients",
+        "Manages marketing campaigns and advertisements for all clients under American Liberty Mortgage"
+      ],
+      category: "Social Media"
+    },
+    {
+      id: 3,
+      role: "Digital Marketer",
+      company: "Nick Tracey Roofing",
+      period: "Dec 2024 – Jul 2025",
+      status: "Current",
+      achievements: [
+        "Implemented local-SEO playbook (GMB optimisation, backlink outreach) that lifted organic enquiries",
+        "Launched Facebook lead-gen funnel driving roofing inspection requests"
+      ],
+      category: "SEO & Lead Generation"
+    },
+    {
+      id: 4,
+      role: "Video Editor / Social Media Manager / Content Creator",
+      company: "Dr. Jones DC",
+      period: "Nov 2024 – Jul 2025",
+      status: "Current",
+      achievements: [
+        "Produced patient-education video series; most-viewed reel hit millions of views on TikTok",
+        "Planned monthly content calendar, doubling Instagram follower count to 18K"
+      ],
+      category: "Healthcare Content"
+    },
+    {
+      id: 5,
+      role: "Graphic Designer / Social Media Manager",
+      company: "Observer Ranch",
+      period: "Jan 2025 – Apr 2025",
+      status: "Current",
+      achievements: [
+        "Designed cohesive event branding, signage & merch for space-themed campground launch",
+        "Grew Facebook community with daily educational and local-highlight posts"
+      ],
+      category: "Event Marketing"
+    },
+    {
+      id: 6,
+      role: "Digital Marketing Assistant / Social Media Manager",
+      company: "REVITY",
+      description: "Includes Clyde Companies, Big Shots Wolf, and Study with Olivia",
+      period: "Apr 2024 – Oct 2024",
+      status: "Completed",
+      achievements: [
+        "Managed organic social media strategy across platforms, increasing engagement and brand visibility",
+        "Edited high-quality videos for User-Generated Content (UGC), optimized for TikTok, Instagram Reels",
+        "Designed eye-catching social media graphics to support UGC and marketing campaigns",
+        "Boosted follower growth and audience interaction through strategic content planning"
+      ],
+      category: "UGC & Multi-Brand"
+    },
+    {
+      id: 7,
+      role: "Digital Marketing Assistant",
+      company: "Rico Suarez",
+      period: "Oct 2023 – Apr 2024",
+      status: "Completed",
+      achievements: [
+        "Automated push-notification sequences in OneSignal to nurture 100K-subscriber base",
+        "Analysed Meta ad sets, trimming CPA through audience segmentation"
+      ],
+      category: "Marketing Automation"
+    },
+    {
+      id: 8,
+      role: "Digital Marketing Assistant / Social Media Manager",
+      company: "Happy Home Initiative",
+      period: "Apr 2024 – Nov 2024",
+      status: "Completed",
+      achievements: [
+        "Curated investor-facing content; drove MoM email-list growth via lead magnets",
+        "Produced property showcases and PDF assets for off-market deals",
+        "Updated website for improved UI and UX experience through WordPress"
+      ],
+      category: "Real Estate"
+    },
+    {
+      id: 9,
+      role: "Social Media Manager / Video Editor",
+      company: "Lauren Krailo, Krailo Socials",
+      period: "Feb 2023 – Oct 2023",
+      status: "Completed",
+      achievements: [
+        "Managed 3 client accounts concurrently, delivering short-form videos and graphic designs",
+        "Set up ClickUp pipelines, cutting content approval turnaround from 3 days to 24h"
+      ],
+      category: "Agency Work"
+    },
+    {
+      id: 10,
+      role: "Social Media Manager / Lead Generation Specialist",
+      company: "Lawson Mayer, AI Genius VA",
+      period: "Feb 2023 – Sep 2023",
+      status: "Completed",
+      achievements: [
+        "Built outbound LinkedIn & cold-email playbooks generating high demo bookings",
+        "Ran Google Search campaigns with high conversion rates on B2B SaaS offers"
+      ],
+      category: "B2B SaaS"
+    },
+    {
+      id: 11,
+      role: "Social Media Manager / Marketing Manager",
+      company: "Dawna Campbell, The Healing Heart Inc.",
+      period: "Oct 2020 – Apr 2023",
+      status: "Completed",
+      achievements: [
+        "Managed omni-channel content (FB, IG, YouTube, podcast), growing total audience to 12K",
+        "Designed funnels resulting in high course revenue during launch cycle"
+      ],
+      category: "Course Marketing"
+    },
+    {
+      id: 12,
+      role: "Social Media Manager / Video Editor",
+      company: "Austin Hughes, Thunder Sun Homes",
+      period: "Apr 2020 – Mar 2024",
+      status: "Completed",
+      achievements: [
+        "Produced weekly videos; top video generated 2.4M views & buyer leads",
+        "Implemented drip campaigns nurturing prospects through purchase"
+      ],
+      category: "Real Estate"
+    },
+    {
+      id: 13,
+      role: "Digital Creator / Social Media Influencer",
+      company: "Self-branded",
+      period: "May 2020 – Present",
+      status: "Current",
+      achievements: [
+        "Creates content on TikTok, Instagram, and Facebook with 150,000+ followers across all platforms",
+        "Started Podcast 'Living Vessel Talks' with 30K followers and hundreds of thousands of monthly listeners"
+      ],
+      category: "Personal Brand"
+    },
+    {
+      id: 14,
+      role: "Brand Ambassador",
+      company: "Worship Generation, Evangelitee, OTAKU & others",
+      period: "Jan 2021 – Present",
+      status: "Current",
+      achievements: [
+        "Creates content for advertising brands used for marketing across different social media platforms"
+      ],
+      category: "Brand Partnerships"
+    },
+    {
+      id: 15,
+      role: "Instructor",
+      company: "Notre Dame of Marbel University (IBED SHS)",
+      period: "Jun 2019 – May 2022",
+      status: "Completed",
+      achievements: [
+        "Teach and supervise students using lectures, demonstrations, discussion groups, laboratory sessions",
+        "Conducted seminars, case studies, field assignments, and independent/group projects"
+      ],
+      category: "Education"
+    }
+  ]
+};
+
 export const graphicsGallery = {
   title: "Sample Graphics",
   subtitle: "Professional Graphic Design Portfolio",

@@ -156,6 +156,64 @@ export const videoGallery = {
           type: "streamable"
         }
       ]
+    },
+    {
+      id: "revity",
+      title: "REVITY",
+      subtitle: "Digital Marketing Assistant / Social Media Manager (Apr 2024 – Oct 2024)",
+      description: "Managed organic social media strategy across platforms for REVITY, including Clyde Companies, Big Shots Wolf, and Study with Olivia. Edited high-quality UGC videos optimized for TikTok and Instagram Reels. Boosted follower growth and audience interaction through strategic content planning.",
+      badge: "🎯 UGC & Brand Marketing",
+      videos: [
+        {
+          id: 17,
+          title: "REVITY UGC Content 1",
+          embedUrl: "https://streamable.com/e/s3el2a?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 18,
+          title: "REVITY UGC Content 2",
+          embedUrl: "https://streamable.com/e/295i1l?",
+          type: "streamable",
+          aspectRatio: "1:1"
+        },
+        {
+          id: 19,
+          title: "REVITY UGC Content 3",
+          embedUrl: "https://streamable.com/e/ihv4g1?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 20,
+          title: "REVITY UGC Content 4",
+          embedUrl: "https://streamable.com/e/igj7rm?",
+          type: "streamable",
+          aspectRatio: "1:1"
+        },
+        {
+          id: 21,
+          title: "REVITY UGC Content 5",
+          embedUrl: "https://streamable.com/e/urcq76?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 22,
+          title: "REVITY UGC Content 6",
+          embedUrl: "https://streamable.com/e/lwwufw?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 23,
+          title: "REVITY UGC Content 7",
+          embedUrl: "https://streamable.com/e/6nyv1z?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        }
+      ]
     }
   ]
 };

@@ -1,6 +1,110 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { videoGallery } from "../data/mockData";
 import { Play, X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+
+const LazyVideoPreview = ({ video, index, onClick, gradient }) => {
+  const [isInView, setIsInView] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const videoRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div 
+      ref={videoRef}
+      className="group cursor-pointer"
+      onClick={onClick}
+    >
+      <div className="bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+        {/* Enhanced video preview */}
+        <div className={`relative bg-black overflow-hidden ${video.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
+          {isInView ? (
+            <>
+              {video.type === 'streamable' ? (
+                <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
+                  <iframe 
+                    allow="fullscreen" 
+                    allowFullScreen 
+                    height="100%" 
+                    src={video.embedUrl} 
+                    width="100%" 
+                    style={{border:'none', width:'100%', height:'100%', position:'absolute', left:'0px', top:'0px', overflow:'hidden', pointerEvents:'none'}}
+                    title={video.title}
+                    onLoad={() => setIsLoaded(true)}
+                  ></iframe>
+                </div>
+              ) : (
+                <iframe
+                  src={video.embedUrl}
+                  className="w-full h-full object-cover pointer-events-none"
+                  title={video.title}
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  onLoad={() => setIsLoaded(true)}
+                ></iframe>
+              )}
+            </>
+          ) : (
+            <div className="w-full h-full bg-gray-800 flex items-center justify-center">
+              <div className="text-white text-center">
+                <div className={`w-16 h-16 bg-gradient-to-br ${gradient} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                  <Play className="w-8 h-8 text-white ml-1" />
+                </div>
+                <p className="text-sm">Loading...</p>
+              </div>
+            </div>
+          )}
+          
+          {/* Enhanced play overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+            <div className={`w-20 h-20 bg-gradient-to-br ${gradient} rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300`}>
+              <Play className="w-10 h-10 text-white ml-1" />
+            </div>
+          </div>
+          
+          {/* Enhanced video number badge */}
+          <div className={`absolute top-4 left-4 w-10 h-10 bg-gradient-to-br ${gradient} rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg`}>
+            {index + 1}
+          </div>
+        </div>
+        
+        {/* Enhanced video info */}
+        <div className="p-6 space-y-4">
+          <h4 className="text-lg font-bold text-white line-clamp-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+            {video.title}
+          </h4>
+          
+          <div className="flex items-center justify-between">
+            <p className="text-sm text-gray-400">
+              Click to watch
+            </p>
+            <div className={`w-8 h-8 bg-gradient-to-br ${gradient} rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300`}>
+              <ExternalLink className="w-4 h-4 text-white" />
+            </div>
+          </div>
+          
+          {/* Progress bar effect */}
+          <div className={`h-1 w-0 group-hover:w-full bg-gradient-to-r ${gradient} transition-all duration-500 rounded-full`}></div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const RedesignedVideoGallery = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);

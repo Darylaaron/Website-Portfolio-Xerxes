@@ -214,6 +214,57 @@ export const videoGallery = {
           aspectRatio: "9:16"
         }
       ]
+    },
+    {
+      id: "happy-home",
+      title: "Happy Home Initiative",
+      subtitle: "Digital Marketing Assistant / Social Media Manager (Apr 2024 – Nov 2024)",
+      description: "Curated investor-facing content and drove month-over-month email list growth via lead magnets. Produced property showcases and PDF assets for off-market deals. Updated website for improved UI and UX experience through WordPress development.",
+      badge: "🏡 Real Estate Marketing",
+      videos: [
+        {
+          id: 24,
+          title: "Happy Home Initiative Content 1",
+          embedUrl: "https://streamable.com/e/8bcwp5?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 25,
+          title: "Happy Home Initiative Content 2",
+          embedUrl: "https://streamable.com/e/2umi1t?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 26,
+          title: "Happy Home Initiative Content 3",
+          embedUrl: "https://streamable.com/e/56phdw?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 27,
+          title: "Happy Home Initiative Content 4",
+          embedUrl: "https://streamable.com/e/7fwdxr?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 28,
+          title: "Happy Home Initiative Content 5",
+          embedUrl: "https://streamable.com/e/1vm44p?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 29,
+          title: "Happy Home Initiative Content 6",
+          embedUrl: "https://streamable.com/e/rh22m5?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        }
+      ]
     }
   ]
 };

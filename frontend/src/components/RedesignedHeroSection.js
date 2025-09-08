@@ -1,5 +1,6 @@
 import React from "react";
 import { ChevronDown } from "lucide-react";
+import { personalInfo } from "../data/mockData";
 
 const RedesignedHeroSection = () => {
   return (
@@ -17,7 +18,7 @@ const RedesignedHeroSection = () => {
           <div className="space-y-8 text-white">
             <div className="space-y-4">
               <div className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium">
-                ✨ Digital Innovation Expert
+                ✨ {personalInfo.title}
               </div>
               
               <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
@@ -31,17 +32,21 @@ const RedesignedHeroSection = () => {
             
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p className="backdrop-blur-sm bg-white/5 p-6 rounded-2xl border border-white/10">
-                Step into a world where <span className="text-purple-400 font-semibold">imagination meets innovation</span>, and creativity knows 
-                no bounds. I am passionate about crafting impactful visual stories that 
-                resonate deeply with audiences, leaving a lasting impression in the digital 
-                realm.
+                {personalInfo.bio}
               </p>
               
               <p className="backdrop-blur-sm bg-white/5 p-6 rounded-2xl border border-white/10">
-                From captivating graphic designs to compelling video narratives, strategic 
-                social media management, insightful research, and result-driven digital 
-                marketing, we are your dedicated partner in bringing your brand's vision to 
-                life.
+                {personalInfo.detailedBio}
+              </p>
+            </div>
+
+            {/* Skills highlight */}
+            <div className="backdrop-blur-sm bg-white/5 p-6 rounded-2xl border border-white/10">
+              <p className="text-sm font-semibold text-purple-400 uppercase tracking-wide mb-3">
+                Specializing in:
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {personalInfo.subtitle}
               </p>
             </div>
 
@@ -62,9 +67,9 @@ const RedesignedHeroSection = () => {
               {/* Floating name card with glassmorphism */}
               <div className="absolute -top-4 -right-4 bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-2xl z-10 border border-white/20 group-hover:scale-105 transition-all duration-300">
                 <div className="text-right text-white">
-                  <div className="text-2xl font-bold">SEAN</div>
-                  <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">RUBIO</div>
-                  <div className="text-sm text-gray-300 mt-2">Digital Marketing Expert</div>
+                  <div className="text-xl font-bold">XERXES</div>
+                  <div className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">SEAN RUBIO</div>
+                  <div className="text-sm text-gray-300 mt-2">{personalInfo.title}</div>
                 </div>
               </div>
               
@@ -74,7 +79,7 @@ const RedesignedHeroSection = () => {
                 <div className="relative w-96 h-96 rounded-3xl overflow-hidden shadow-2xl group-hover:scale-105 transition-all duration-500 border-2 border-white/20">
                   <img 
                     src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTczMjc2ODZ8MA&ixlib=rb-4.1.0&q=85"
-                    alt="Sean Rubio - Digital Marketing Expert"
+                    alt="Xerxes Sean Rubio - Digital Creative Director"
                     className="w-full h-full object-cover"
                   />
                   {/* Gradient overlay */}

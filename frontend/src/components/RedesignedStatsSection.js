@@ -1,34 +1,34 @@
 import React from "react";
-import { Smile, Star, Globe, Zap } from "lucide-react";
+import { Users, TrendingUp, Eye, Award } from "lucide-react";
 
 const RedesignedStatsSection = () => {
   const stats = [
     {
-      icon: Smile,
-      number: "20M+",
-      subtitle: "Views",
-      label: "Accumulated",
+      icon: Users,
+      number: "160K+",
+      subtitle: "Followers",
+      label: "Social Media",
       color: "from-yellow-400 to-orange-500"
     },
     {
-      icon: Star,
-      number: "150K",
-      subtitle: "followers",
-      label: "",
+      icon: Eye,
+      number: "Millions",
+      subtitle: "Views",
+      label: "Video Content",
       color: "from-purple-400 to-pink-500"
     },
     {
-      icon: Globe,
-      number: "8",
+      icon: TrendingUp,
+      number: "7+",
       subtitle: "Years",
       label: "Experience",
       color: "from-blue-400 to-cyan-500"
     },
     {
-      icon: Zap,
-      number: "AI",
-      subtitle: "Master",
-      label: "",
+      icon: Award,
+      number: "Full-Stack",
+      subtitle: "Creator",
+      label: "Content Expert",
       color: "from-green-400 to-emerald-500"
     }
   ];
@@ -60,7 +60,7 @@ const RedesignedStatsSection = () => {
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 group-hover:bg-white/10 transition-all duration-300">
                 <div className="text-white space-y-2">
                   <div className="flex items-center justify-center space-x-2">
-                    <span className={`text-3xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}>
+                    <span className={`text-2xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}>
                       {stat.number}
                     </span>
                     {stat.subtitle && (
@@ -69,11 +69,9 @@ const RedesignedStatsSection = () => {
                       </span>
                     )}
                   </div>
-                  {stat.label && (
-                    <div className="text-sm text-gray-400">
-                      {stat.label}
-                    </div>
-                  )}
+                  <div className="text-sm text-gray-400">
+                    {stat.label}
+                  </div>
                 </div>
               </div>
               

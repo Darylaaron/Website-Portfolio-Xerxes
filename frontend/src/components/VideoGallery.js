@@ -1,6 +1,99 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { videoGallery } from "../data/mockData";
 import { Play, X, ChevronLeft, ChevronRight } from "lucide-react";
+
+const LazyVideoPreview = ({ video, index, onClick }) => {
+  const [isInView, setIsInView] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const videoRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div 
+      ref={videoRef}
+      className="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+      onClick={onClick}
+    >
+      {/* Video preview container */}
+      <div className={`relative bg-black overflow-hidden ${video.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
+        {isInView ? (
+          <>
+            {video.type === 'streamable' ? (
+              <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
+                <iframe 
+                  allow="fullscreen" 
+                  allowFullScreen 
+                  height="100%" 
+                  src={video.embedUrl} 
+                  width="100%" 
+                  style={{border:'none', width:'100%', height:'100%', position:'absolute', left:'0px', top:'0px', overflow:'hidden', pointerEvents:'none'}}
+                  title={video.title}
+                  onLoad={() => setIsLoaded(true)}
+                ></iframe>
+              </div>
+            ) : (
+              <iframe
+                src={video.embedUrl}
+                className="w-full h-full object-cover pointer-events-none"
+                title={video.title}
+                allow="autoplay; fullscreen; picture-in-picture"
+                onLoad={() => setIsLoaded(true)}
+              ></iframe>
+            )}
+          </>
+        ) : (
+          <div className="w-full h-full bg-gray-800 flex items-center justify-center">
+            <div className="text-white text-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Play className="w-8 h-8 text-white ml-1" />
+              </div>
+              <p className="text-sm">Loading...</p>
+            </div>
+          </div>
+        )}
+        
+        {/* Play overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
+            <Play className="w-8 h-8 text-gray-900 ml-1" />
+          </div>
+        </div>
+
+        {/* Video number badge */}
+        <div className="absolute top-3 left-3 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg">
+          {index + 1}
+        </div>
+      </div>
+      
+      {/* Video info */}
+      <div className="p-4">
+        <h4 className="text-md font-semibold text-gray-900 line-clamp-2 group-hover:text-blue-600 transition-colors duration-300">
+          {video.title}
+        </h4>
+        <p className="text-sm text-gray-500 mt-2">
+          Click to watch
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const VideoGallery = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);

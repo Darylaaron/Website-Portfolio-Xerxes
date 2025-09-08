@@ -98,6 +98,7 @@ const LazyVideoPreview = ({ video, index, onClick }) => {
 const VideoGallery = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [activeCategory, setActiveCategory] = useState(0);
+  const [visibleVideos, setVisibleVideos] = useState(8); // Limit initial videos
 
   const openVideoModal = (video) => {
     setSelectedVideo(video);
@@ -109,13 +110,21 @@ const VideoGallery = () => {
 
   const nextCategory = () => {
     setActiveCategory((prev) => (prev + 1) % videoGallery.categories.length);
+    setVisibleVideos(8); // Reset when changing categories
   };
 
   const prevCategory = () => {
     setActiveCategory((prev) => (prev - 1 + videoGallery.categories.length) % videoGallery.categories.length);
+    setVisibleVideos(8); // Reset when changing categories
+  };
+
+  const loadMoreVideos = () => {
+    setVisibleVideos(prev => prev + 4);
   };
 
   const currentCategory = videoGallery.categories[activeCategory];
+  const displayedVideos = currentCategory.videos.slice(0, visibleVideos);
+  const hasMoreVideos = currentCategory.videos.length > visibleVideos;
 
   return (
     <section className="py-20 bg-gray-50">

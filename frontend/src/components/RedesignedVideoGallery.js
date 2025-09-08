@@ -228,68 +228,13 @@ const RedesignedVideoGallery = () => {
           {/* Enhanced video grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {currentCategory.videos.map((video, index) => (
-              <div 
+              <LazyVideoPreview
                 key={video.id}
-                className="group cursor-pointer"
+                video={video}
+                index={index}
+                gradient={gradients[index]}
                 onClick={() => openVideoModal(video)}
-              >
-                <div className="bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-                  {/* Enhanced video preview */}
-                  <div className={`relative bg-black overflow-hidden ${video.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
-                    {video.type === 'streamable' ? (
-                      <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
-                        <iframe 
-                          allow="fullscreen" 
-                          allowFullScreen 
-                          height="100%" 
-                          src={video.embedUrl} 
-                          width="100%" 
-                          style={{border:'none', width:'100%', height:'100%', position:'absolute', left:'0px', top:'0px', overflow:'hidden', pointerEvents:'none'}}
-                          title={video.title}
-                        ></iframe>
-                      </div>
-                    ) : (
-                      <iframe
-                        src={video.embedUrl}
-                        className="w-full h-full object-cover pointer-events-none"
-                        title={video.title}
-                        allow="autoplay; fullscreen; picture-in-picture"
-                      ></iframe>
-                    )}
-                    
-                    {/* Enhanced play overlay */}
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-                      <div className={`w-20 h-20 bg-gradient-to-br ${gradients[index]} rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300`}>
-                        <Play className="w-10 h-10 text-white ml-1" />
-                      </div>
-                    </div>
-                    
-                    {/* Enhanced video number badge */}
-                    <div className={`absolute top-4 left-4 w-10 h-10 bg-gradient-to-br ${gradients[index]} rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg`}>
-                      {index + 1}
-                    </div>
-                  </div>
-                  
-                  {/* Enhanced video info */}
-                  <div className="p-6 space-y-4">
-                    <h4 className="text-lg font-bold text-white line-clamp-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
-                      {video.title}
-                    </h4>
-                    
-                    <div className="flex items-center justify-between">
-                      <p className="text-sm text-gray-400">
-                        Click to watch
-                      </p>
-                      <div className={`w-8 h-8 bg-gradient-to-br ${gradients[index]} rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300`}>
-                        <ExternalLink className="w-4 h-4 text-white" />
-                      </div>
-                    </div>
-                    
-                    {/* Progress bar effect */}
-                    <div className={`h-1 w-0 group-hover:w-full bg-gradient-to-r ${gradients[index]} transition-all duration-500 rounded-full`}></div>
-                  </div>
-                </div>
-              </div>
+              />
             ))}
           </div>
         </div>

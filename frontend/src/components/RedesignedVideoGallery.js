@@ -203,7 +203,7 @@ const RedesignedVideoGallery = () => {
               </button>
               
               {/* Video container */}
-              <div className="aspect-[9/16]">
+              <div className={`${selectedVideo.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
                 {selectedVideo.type === 'streamable' ? (
                   <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
                     <iframe 

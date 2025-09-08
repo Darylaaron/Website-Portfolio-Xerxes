@@ -33,7 +33,11 @@ const LazyVideoPreview = ({ video, index, onClick, gradient }) => {
     >
       <div className="bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
         {/* Enhanced video preview */}
-        <div className={`relative bg-black overflow-hidden ${video.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
+        <div className={`relative bg-black overflow-hidden ${
+          video.aspectRatio === '1:1' ? 'aspect-square' : 
+          video.aspectRatio === '16:9' ? 'aspect-video' : 
+          'aspect-[9/16]'
+        }`}>
           {isInView ? (
             <>
               {video.type === 'streamable' ? (

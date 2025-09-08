@@ -46,7 +46,11 @@ const LazyVideoPreview = ({ video, index, onClick }) => {
       onClick={onClick}
     >
       {/* Video preview container */}
-      <div className={`relative bg-black overflow-hidden ${video.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
+      <div className={`relative bg-black overflow-hidden ${
+        video.aspectRatio === '1:1' ? 'aspect-square' : 
+        video.aspectRatio === '16:9' ? 'aspect-video' : 
+        'aspect-[9/16]'
+      }`}>
         {isInView ? (
           <>
             {video.type === 'streamable' ? (

@@ -1,3 +1,34 @@
+export const educationBackground = {
+  title: "Education",
+  subtitle: "Academic Foundation in Linguistics and Education",
+  description: "Strong educational background in English linguistics and secondary education, providing the theoretical foundation for exceptional communication skills, content creation, and educational content development.",
+  badge: "🎓 Academic Background",
+  degrees: [
+    {
+      id: 1,
+      degree: "Master of English in Applied Linguistics",
+      status: "24 units earned",
+      institution: "University of Southeastern Philippines",
+      logoEmbed: "https://streamable.com/e/bux3om?",
+      period: "Jun 2018 – 2020",
+      type: "Master's Degree",
+      field: "Applied Linguistics",
+      aspectRatio: "banner" // 13.281% padding indicates wide banner format
+    },
+    {
+      id: 2,
+      degree: "Bachelor of Secondary Education, Major in English",
+      status: "Completed",
+      institution: "Notre Dame of Marbel University",
+      logoEmbed: "https://streamable.com/e/qtjfwo?",
+      period: "Jun 2014 – 2018",
+      type: "Bachelor's Degree",
+      field: "Secondary Education - English",
+      aspectRatio: "1:1" // 100% padding indicates square format
+    }
+  ]
+};
+
 export const companiesWorkedWith = {
   title: "I'VE WORKED WITH THE BEST COMPANIES",
   subtitle: "Trusted by Leading Brands Across Multiple Industries",

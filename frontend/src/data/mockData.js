@@ -1,3 +1,60 @@
+export const companiesWorkedWith = {
+  title: "I'VE WORKED WITH THE BEST COMPANIES",
+  subtitle: "Trusted by Leading Brands Across Multiple Industries",
+  description: "Over 7+ years, I've had the privilege of collaborating with diverse companies, from startups to established brands, helping them achieve their digital marketing goals and grow their online presence.",
+  badge: "🤝 Client Portfolio",
+  companies: [
+    {
+      id: 1,
+      name: "The Mentors Studio",
+      logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e5be146154e1500e04529.png",
+      category: "Education & Mentoring"
+    },
+    {
+      id: 2,
+      name: "Krailo Socials",
+      logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e5be1e41e412b2cebf1f5.png",
+      category: "Social Media Agency"
+    },
+    {
+      id: 3,
+      name: "MUVR",
+      logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e5be146154e3159e0452a.png",
+      category: "Technology"
+    },
+    {
+      id: 4,
+      name: "AI Genius VA",
+      logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e5be1863715e69ea7a6ac.png",
+      category: "AI & Virtual Assistance"
+    },
+    {
+      id: 5,
+      name: "The Healing Heart Inc.",
+      logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e5be1660abaeacb8d3f9f.png",
+      category: "Healthcare & Wellness"
+    },
+    {
+      id: 6,
+      name: "Elite Industrial Tools",
+      logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e5be1b948934c83378def.png",
+      category: "Industrial & Manufacturing"
+    },
+    {
+      id: 7,
+      name: "Thunder Sun Homes",
+      logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e5be1660aba5f688d3f9e.png",
+      category: "Real Estate"
+    },
+    {
+      id: 8,
+      name: "Premier Cuts",
+      logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e5be198adf97c6dad636d.png",
+      category: "Beauty & Personal Care"
+    }
+  ]
+};
+
 export const professionalExperience = {
   title: "Professional Experience",
   subtitle: "7+ Years of Digital Marketing Excellence",

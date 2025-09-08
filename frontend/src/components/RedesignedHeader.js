@@ -33,7 +33,7 @@ const RedesignedHeader = () => {
             <div className={`bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-4 shadow-lg group-hover:scale-110 transition-all duration-300 ${
               isScrolled ? 'shadow-xl' : 'shadow-lg'
             }`}>
-              <span className="text-2xl font-bold text-white">SR</span>
+              <span className="text-2xl font-bold text-white">XSR</span>
             </div>
           </div>
 

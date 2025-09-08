@@ -131,7 +131,7 @@ const RedesignedVideoGallery = () => {
               >
                 <div className="bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                   {/* Enhanced video preview */}
-                  <div className="relative bg-black aspect-[9/16] overflow-hidden">
+                  <div className={`relative bg-black overflow-hidden ${video.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
                     {video.type === 'streamable' ? (
                       <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
                         <iframe 

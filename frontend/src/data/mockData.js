@@ -332,37 +332,64 @@ export const videoGallery = {
           id: 1,
           title: "Break-up with ex",
           embedUrl: "https://player.vimeo.com/video/1107124870?badge=0&autopause=0&player_id=0&app_id=58479",
-          type: "vimeo"
+          type: "vimeo",
+          aspectRatio: "9:16"
         },
         {
           id: 2,
           title: "17-Year-Old, Found Not Guilty of Killing Mother...",
           embedUrl: "https://player.vimeo.com/video/1107124959?badge=0&autopause=0&player_id=0&app_id=58479",
-          type: "vimeo"
+          type: "vimeo",
+          aspectRatio: "9:16"
         },
         {
           id: 3,
           title: "Different kind of hanger that we recommend",
           embedUrl: "https://player.vimeo.com/video/1107124800?badge=0&autopause=0&player_id=0&app_id=58479",
-          type: "vimeo"
+          type: "vimeo",
+          aspectRatio: "9:16"
         },
         {
           id: 4,
           title: "Chat GPT Brooke",
           embedUrl: "https://player.vimeo.com/video/1107124728?badge=0&autopause=0&player_id=0&app_id=58479",
-          type: "vimeo"
+          type: "vimeo",
+          aspectRatio: "9:16"
         },
         {
           id: 5,
           title: "Good Spa...",
           embedUrl: "https://player.vimeo.com/video/1107124524?badge=0&autopause=0&player_id=0&app_id=58479",
-          type: "vimeo"
+          type: "vimeo",
+          aspectRatio: "9:16"
         },
         {
           id: 6,
           title: "Copy of Copy of Did you know (Mobile Video)",
           embedUrl: "https://player.vimeo.com/video/1107121593?badge=0&autopause=0&player_id=0&app_id=58479",
-          type: "vimeo"
+          type: "vimeo",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 7,
+          title: "Featured Viral Content 1",
+          embedUrl: "https://streamable.com/e/zxc55l?",
+          type: "streamable",
+          aspectRatio: "16:9"
+        },
+        {
+          id: 8,
+          title: "Featured Viral Content 2",
+          embedUrl: "https://streamable.com/e/nii7i1?",
+          type: "streamable",
+          aspectRatio: "9:16"
+        },
+        {
+          id: 9,
+          title: "Featured Viral Content 3",
+          embedUrl: "https://streamable.com/e/dxudz4?",
+          type: "streamable",
+          aspectRatio: "9:16"
         }
       ]
     },

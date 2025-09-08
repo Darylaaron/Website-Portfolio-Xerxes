@@ -4,6 +4,7 @@ import RedesignedHeroSection from "../components/RedesignedHeroSection";
 import RedesignedStatsSection from "../components/RedesignedStatsSection";
 import RedesignedVideoGallery from "../components/RedesignedVideoGallery";
 import RedesignedGraphicsGallery from "../components/RedesignedGraphicsGallery";
+import RedesignedCompaniesSection from "../components/RedesignedCompaniesSection";
 import RedesignedExperienceSection from "../components/RedesignedExperienceSection";
 import RedesignedPortfolioSection from "../components/RedesignedPortfolioSection";
 
@@ -20,6 +21,9 @@ const RedesignedHomePage = () => {
       </section>
       <section id="graphics">
         <RedesignedGraphicsGallery />
+      </section>
+      <section id="companies">
+        <RedesignedCompaniesSection />
       </section>
       <section id="experience">
         <RedesignedExperienceSection />

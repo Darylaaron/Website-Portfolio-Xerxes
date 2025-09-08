@@ -100,7 +100,7 @@ const VideoGallery = () => {
                 onClick={() => openVideoModal(video)}
               >
                 {/* Video preview container */}
-                <div className="relative bg-black aspect-[9/16] overflow-hidden">
+                <div className={`relative bg-black overflow-hidden ${video.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
                   {video.type === 'streamable' ? (
                     <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
                       <iframe 

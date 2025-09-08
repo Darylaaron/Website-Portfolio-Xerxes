@@ -2,7 +2,7 @@ import React from "react";
 import RedesignedHeader from "../components/RedesignedHeader";
 import RedesignedHeroSection from "../components/RedesignedHeroSection";
 import RedesignedStatsSection from "../components/RedesignedStatsSection";
-import RedesignedVideoShowcase from "../components/RedesignedVideoShowcase";
+import RedesignedVideoGallery from "../components/RedesignedVideoGallery";
 import RedesignedPortfolioSection from "../components/RedesignedPortfolioSection";
 
 const RedesignedHomePage = () => {
@@ -14,7 +14,7 @@ const RedesignedHomePage = () => {
       </section>
       <RedesignedStatsSection />
       <section id="videos">
-        <RedesignedVideoShowcase />
+        <RedesignedVideoGallery />
       </section>
       <section id="portfolio">
         <RedesignedPortfolioSection />

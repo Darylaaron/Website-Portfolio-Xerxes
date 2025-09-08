@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import StatsSection from "../components/StatsSection";
+import VideoShowcase from "../components/VideoShowcase";
 import PortfolioSection from "../components/PortfolioSection";
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Header />
       <HeroSection />
       <StatsSection />
+      <VideoShowcase />
       <PortfolioSection />
     </div>
   );

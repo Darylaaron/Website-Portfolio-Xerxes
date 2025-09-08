@@ -2,6 +2,7 @@ import React from "react";
 import RedesignedHeader from "../components/RedesignedHeader";
 import RedesignedHeroSection from "../components/RedesignedHeroSection";
 import RedesignedStatsSection from "../components/RedesignedStatsSection";
+import RedesignedVideoShowcase from "../components/RedesignedVideoShowcase";
 import RedesignedPortfolioSection from "../components/RedesignedPortfolioSection";
 
 const RedesignedHomePage = () => {
@@ -12,6 +13,9 @@ const RedesignedHomePage = () => {
         <RedesignedHeroSection />
       </section>
       <RedesignedStatsSection />
+      <section id="videos">
+        <RedesignedVideoShowcase />
+      </section>
       <section id="portfolio">
         <RedesignedPortfolioSection />
       </section>

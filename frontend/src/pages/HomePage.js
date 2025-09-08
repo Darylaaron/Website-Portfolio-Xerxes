@@ -6,6 +6,7 @@ import VideoGallery from "../components/VideoGallery";
 import GraphicsGallery from "../components/GraphicsGallery";
 import CompaniesSection from "../components/CompaniesSection";
 import ExperienceSection from "../components/ExperienceSection";
+import EducationSection from "../components/EducationSection";
 import PortfolioSection from "../components/PortfolioSection";
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
       <GraphicsGallery />
       <CompaniesSection />
       <ExperienceSection />
+      <EducationSection />
       <PortfolioSection />
     </div>
   );

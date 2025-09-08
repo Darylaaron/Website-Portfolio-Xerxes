@@ -187,57 +187,12 @@ const VideoGallery = () => {
           {/* Video grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {currentCategory.videos.map((video, index) => (
-              <div 
+              <LazyVideoPreview
                 key={video.id}
-                className="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                video={video}
+                index={index}
                 onClick={() => openVideoModal(video)}
-              >
-                {/* Video preview container */}
-                <div className={`relative bg-black overflow-hidden ${video.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
-                  {video.type === 'streamable' ? (
-                    <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
-                      <iframe 
-                        allow="fullscreen" 
-                        allowFullScreen 
-                        height="100%" 
-                        src={video.embedUrl} 
-                        width="100%" 
-                        style={{border:'none', width:'100%', height:'100%', position:'absolute', left:'0px', top:'0px', overflow:'hidden', pointerEvents:'none'}}
-                        title={video.title}
-                      ></iframe>
-                    </div>
-                  ) : (
-                    <iframe
-                      src={video.embedUrl}
-                      className="w-full h-full object-cover pointer-events-none"
-                      title={video.title}
-                      allow="autoplay; fullscreen; picture-in-picture"
-                    ></iframe>
-                  )}
-                  
-                  {/* Play overlay */}
-                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
-                      <Play className="w-8 h-8 text-gray-900 ml-1" />
-                    </div>
-                  </div>
-
-                  {/* Video number badge */}
-                  <div className="absolute top-3 left-3 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg">
-                    {index + 1}
-                  </div>
-                </div>
-                
-                {/* Video info */}
-                <div className="p-4">
-                  <h4 className="text-md font-semibold text-gray-900 line-clamp-2 group-hover:text-blue-600 transition-colors duration-300">
-                    {video.title}
-                  </h4>
-                  <p className="text-sm text-gray-500 mt-2">
-                    Click to watch
-                  </p>
-                </div>
-              </div>
+              />
             ))}
           </div>
         </div>

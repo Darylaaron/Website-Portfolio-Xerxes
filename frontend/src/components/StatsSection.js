@@ -1,27 +1,27 @@
 import React from "react";
-import { Smile, Star, Globe, Zap } from "lucide-react";
+import { Users, TrendingUp, Eye, Award } from "lucide-react";
 
 const StatsSection = () => {
   const stats = [
     {
-      icon: Smile,
-      number: "20+ Million Views",
-      label: "Accumulated"
+      icon: Users,
+      number: "160K+",
+      label: "Social Media Followers"
     },
     {
-      icon: Star,
-      number: "150,000 followers",
-      label: ""
+      icon: Eye,
+      number: "Millions",
+      label: "of Video Views"
     },
     {
-      icon: Globe,
-      number: "8 years experience",
-      label: ""
+      icon: TrendingUp,
+      number: "7+ Years",
+      label: "Professional Experience"
     },
     {
-      icon: Zap,
-      number: "Master of AI",
-      label: ""
+      icon: Award,
+      number: "Full-Stack",
+      label: "Content Creator"
     }
   ];
 
@@ -41,11 +41,9 @@ const StatsSection = () => {
                 <div className="text-lg font-semibold mb-1">
                   {stat.number}
                 </div>
-                {stat.label && (
-                  <div className="text-sm text-gray-300">
-                    {stat.label}
-                  </div>
-                )}
+                <div className="text-sm text-gray-300">
+                  {stat.label}
+                </div>
               </div>
             </div>
           ))}

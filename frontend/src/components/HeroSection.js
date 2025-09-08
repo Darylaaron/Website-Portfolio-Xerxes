@@ -51,7 +51,7 @@ const HeroSection = () => {
             </div>
             <div className="w-96 h-96 rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTczMjc2ODZ8MA&ixlib=rb-4.1.0&q=85"
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e675d02dbb03cbbdd5d44.png"
                 alt="Xerxes Sean Rubio - Digital Creative Director"
                 className="w-full h-full object-cover"
               />

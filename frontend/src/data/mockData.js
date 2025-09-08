@@ -23,44 +23,78 @@ export const portfolioData = {
   ]
 };
 
-export const bestVideos = [
-  {
-    id: 1,
-    title: "Break-up with ex",
-    embedCode: `<iframe src="https://player.vimeo.com/video/1107124870?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Break-up with ex"></iframe>`,
-    vimeoUrl: "https://player.vimeo.com/video/1107124870?badge=0&autopause=0&player_id=0&app_id=58479"
-  },
-  {
-    id: 2,
-    title: "17-Year-Old, Found Not Guilty of Killing Mother...",
-    embedCode: `<iframe src="https://player.vimeo.com/video/1107124959?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="17-Year-Old, Found Not Guilty of Killing Mother..."></iframe>`,
-    vimeoUrl: "https://player.vimeo.com/video/1107124959?badge=0&autopause=0&player_id=0&app_id=58479"
-  },
-  {
-    id: 3,
-    title: "Different kind of hanger that we recommend",
-    embedCode: `<iframe src="https://player.vimeo.com/video/1107124800?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="different kind of hanger that we recommend"></iframe>`,
-    vimeoUrl: "https://player.vimeo.com/video/1107124800?badge=0&autopause=0&player_id=0&app_id=58479"
-  },
-  {
-    id: 4,
-    title: "Chat GPT Brooke",
-    embedCode: `<iframe src="https://player.vimeo.com/video/1107124728?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Chat gpt Brooke"></iframe>`,
-    vimeoUrl: "https://player.vimeo.com/video/1107124728?badge=0&autopause=0&player_id=0&app_id=58479"
-  },
-  {
-    id: 5,
-    title: "Good Spa...",
-    embedCode: `<iframe src="https://player.vimeo.com/video/1107124524?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Good Spa.."></iframe>`,
-    vimeoUrl: "https://player.vimeo.com/video/1107124524?badge=0&autopause=0&player_id=0&app_id=58479"
-  },
-  {
-    id: 6,
-    title: "Copy of Copy of Did you know (Mobile Video)",
-    embedCode: `<iframe src="https://player.vimeo.com/video/1107121593?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Copy of Copy of Did you know (Mobile Video)"></iframe>`,
-    vimeoUrl: "https://player.vimeo.com/video/1107121593?badge=0&autopause=0&player_id=0&app_id=58479"
-  }
-];
+export const videoGallery = {
+  categories: [
+    {
+      id: "best-videos",
+      title: "Best Video Content",
+      subtitle: "Viral Content That Generated Millions of Views",
+      description: "Showcase of scroll-stopping videos that have captivated millions of viewers across social media platforms. Each piece demonstrates mastery in storytelling, editing, and viral audience engagement.",
+      badge: "🎬 Featured Content",
+      videos: [
+        {
+          id: 1,
+          title: "Break-up with ex",
+          vimeoUrl: "https://player.vimeo.com/video/1107124870?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          id: 2,
+          title: "17-Year-Old, Found Not Guilty of Killing Mother...",
+          vimeoUrl: "https://player.vimeo.com/video/1107124959?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          id: 3,
+          title: "Different kind of hanger that we recommend",
+          vimeoUrl: "https://player.vimeo.com/video/1107124800?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          id: 4,
+          title: "Chat GPT Brooke",
+          vimeoUrl: "https://player.vimeo.com/video/1107124728?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          id: 5,
+          title: "Good Spa...",
+          vimeoUrl: "https://player.vimeo.com/video/1107124524?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          id: 6,
+          title: "Copy of Copy of Did you know (Mobile Video)",
+          vimeoUrl: "https://player.vimeo.com/video/1107121593?badge=0&autopause=0&player_id=0&app_id=58479"
+        }
+      ]
+    },
+    {
+      id: "instacraft-marketing",
+      title: "Instacraft Marketing",
+      subtitle: "Digital Marketing Campaign Videos (Ivins Steinhauer)",
+      description: "Professional marketing videos created for Instacraft Marketing, generating >200 qualified leads per month through targeted Meta Ads campaigns. Demonstrating expertise in conversion-focused video content.",
+      badge: "💼 Client Work",
+      videos: [
+        {
+          id: 7,
+          title: "Find home here",
+          vimeoUrl: "https://player.vimeo.com/video/1116730466?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          id: 8,
+          title: "Burn more fat",
+          vimeoUrl: "https://player.vimeo.com/video/1116730310?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          id: 9,
+          title: "1218",
+          vimeoUrl: "https://player.vimeo.com/video/1116730134?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          id: 10,
+          title: "Fantastic 4",
+          vimeoUrl: "https://player.vimeo.com/video/1116729928?badge=0&autopause=0&player_id=0&app_id=58479"
+        }
+      ]
+    }
+  ]
+};
 
 export const personalInfo = {
   name: "Xerxes Sean Rubio",

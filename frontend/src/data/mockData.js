@@ -82,6 +82,30 @@ export const companiesWorkedWith = {
       name: "Premier Cuts",
       logo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e5be198adf97c6dad636d.png",
       category: "Beauty & Personal Care"
+    },
+    {
+      id: 9,
+      name: "Nick Tracey Roofing",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVLZDeq19eUDWerzcyWljcP8PolC44xptvNQ&s",
+      category: "Roofing & Construction"
+    },
+    {
+      id: 10,
+      name: "Instacraft Marketing",
+      logo: "https://instacraftmarketing.com/wp-content/uploads/2025/01/menu-logo.png",
+      category: "Digital Marketing Agency"
+    },
+    {
+      id: 11,
+      name: "Dr. Jones DC",
+      logo: "https://coloradomedicalsolutions.com/wp-content/uploads/2024/05/2.png",
+      category: "Chiropractic & Healthcare"
+    },
+    {
+      id: 12,
+      name: "Observer Ranch",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfeZ--UQgeoaSQHjrlt1jHQayFjwoNCHiRdjwggmoU-sjx0gUualPjTovyixKoakk1Ptw&usqp=CAU",
+      category: "Hospitality & Events"
     }
   ]
 };

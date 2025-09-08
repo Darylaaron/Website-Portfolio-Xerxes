@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import StatsSection from "../components/StatsSection";
 import VideoGallery from "../components/VideoGallery";
 import GraphicsGallery from "../components/GraphicsGallery";
+import CompaniesSection from "../components/CompaniesSection";
 import ExperienceSection from "../components/ExperienceSection";
 import PortfolioSection from "../components/PortfolioSection";
 
@@ -15,6 +16,7 @@ const HomePage = () => {
       <StatsSection />
       <VideoGallery />
       <GraphicsGallery />
+      <CompaniesSection />
       <ExperienceSection />
       <PortfolioSection />
     </div>

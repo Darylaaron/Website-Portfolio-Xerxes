@@ -42,8 +42,8 @@ const HeroSection = () => {
         {/* Right side - Profile image */}
         <div className="flex justify-center lg:justify-end">
           <div className="relative">
-            <div className="absolute top-4 right-4 bg-white rounded-lg p-4 shadow-lg z-10">
-              <div className="text-right">
+            <div className="absolute -bottom-4 -left-4 bg-white rounded-lg p-4 shadow-lg z-10">
+              <div className="text-left">
                 <div className="text-xl font-bold text-gray-900">XERXES</div>
                 <div className="text-xl font-bold text-gray-900">SEAN RUBIO</div>
                 <div className="text-sm text-gray-600 mt-1">Digital Creative Director</div>

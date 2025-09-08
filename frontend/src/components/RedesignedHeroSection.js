@@ -78,7 +78,7 @@ const RedesignedHeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
                 <div className="relative w-96 h-96 rounded-3xl overflow-hidden shadow-2xl group-hover:scale-105 transition-all duration-500 border-2 border-white/20">
                   <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTczMjc2ODZ8MA&ixlib=rb-4.1.0&q=85"
+                    src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/663e675d02dbb03cbbdd5d44.png"
                     alt="Xerxes Sean Rubio - Digital Creative Director"
                     className="w-full h-full object-cover"
                   />

@@ -1,3 +1,48 @@
+export const graphicsGallery = {
+  title: "Sample Graphics",
+  subtitle: "Professional Graphic Design Portfolio",
+  description: "Showcase of creative graphic design work including branding, digital graphics, social media content, and visual marketing materials. Each design demonstrates expertise in visual storytelling, brand consistency, and professional aesthetics.",
+  badge: "🎨 Graphic Design",
+  graphics: [
+    {
+      id: 1,
+      title: "Brand Identity Design 1",
+      imageUrl: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/664fbc349fbc2e2fb46b71c3.jpeg",
+      category: "Branding"
+    },
+    {
+      id: 2,
+      title: "Social Media Graphics 1",
+      imageUrl: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/664fbc3d6d77d051b5d6c368.jpeg",
+      category: "Social Media"
+    },
+    {
+      id: 3,
+      title: "Marketing Material Design 1",
+      imageUrl: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/664fbc3d9fbc2e06556b71d0.jpeg",
+      category: "Marketing"
+    },
+    {
+      id: 4,
+      title: "Digital Graphics Design 1",
+      imageUrl: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/664fbc3ebc8a8e094ef8ebc1.jpeg",
+      category: "Digital"
+    },
+    {
+      id: 5,
+      title: "Brand Identity Design 2",
+      imageUrl: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/664fbc3d4fcc5234040eb81f.jpeg",
+      category: "Branding"
+    },
+    {
+      id: 6,
+      title: "Creative Visual Design 1",
+      imageUrl: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/7qkXkFOVnZOBv79XcTfo/media/664fbc3d9fbc2eeca96b71d1.jpeg",
+      category: "Creative"
+    }
+  ]
+};
+
 export const portfolioData = {
   services: [
     {

@@ -249,7 +249,11 @@ const VideoGallery = () => {
               </button>
               
               {/* Video container */}
-              <div className={`${selectedVideo.aspectRatio === '1:1' ? 'aspect-square' : 'aspect-[9/16]'}`}>
+              <div className={`${
+                selectedVideo.aspectRatio === '1:1' ? 'aspect-square' : 
+                selectedVideo.aspectRatio === '16:9' ? 'aspect-video' : 
+                'aspect-[9/16]'
+              }`}>
                 {selectedVideo.type === 'streamable' ? (
                   <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
                     <iframe 

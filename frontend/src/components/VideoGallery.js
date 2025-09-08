@@ -163,13 +163,27 @@ const VideoGallery = () => {
               
               {/* Video container */}
               <div className="aspect-[9/16]">
-                <iframe
-                  src={selectedVideo.vimeoUrl}
-                  className="w-full h-full"
-                  title={selectedVideo.title}
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                ></iframe>
+                {selectedVideo.type === 'streamable' ? (
+                  <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
+                    <iframe 
+                      allow="fullscreen" 
+                      allowFullScreen 
+                      height="100%" 
+                      src={selectedVideo.embedUrl} 
+                      width="100%" 
+                      style={{border:'none', width:'100%', height:'100%', position:'absolute', left:'0px', top:'0px', overflow:'hidden'}}
+                      title={selectedVideo.title}
+                    ></iframe>
+                  </div>
+                ) : (
+                  <iframe
+                    src={selectedVideo.embedUrl}
+                    className="w-full h-full"
+                    title={selectedVideo.title}
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                  ></iframe>
+                )}
               </div>
               
               {/* Video title */}

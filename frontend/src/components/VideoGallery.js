@@ -101,12 +101,26 @@ const VideoGallery = () => {
               >
                 {/* Video preview container */}
                 <div className="relative bg-black aspect-[9/16] overflow-hidden">
-                  <iframe
-                    src={video.vimeoUrl}
-                    className="w-full h-full object-cover pointer-events-none"
-                    title={video.title}
-                    allow="autoplay; fullscreen; picture-in-picture"
-                  ></iframe>
+                  {video.type === 'streamable' ? (
+                    <div style={{position:'relative', width:'100%', height:'100%', paddingBottom:'0'}}>
+                      <iframe 
+                        allow="fullscreen" 
+                        allowFullScreen 
+                        height="100%" 
+                        src={video.embedUrl} 
+                        width="100%" 
+                        style={{border:'none', width:'100%', height:'100%', position:'absolute', left:'0px', top:'0px', overflow:'hidden', pointerEvents:'none'}}
+                        title={video.title}
+                      ></iframe>
+                    </div>
+                  ) : (
+                    <iframe
+                      src={video.embedUrl}
+                      className="w-full h-full object-cover pointer-events-none"
+                      title={video.title}
+                      allow="autoplay; fullscreen; picture-in-picture"
+                    ></iframe>
+                  )}
                   
                   {/* Play overlay */}
                   <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
